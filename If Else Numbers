@@ -1,0 +1,13 @@
+# Anthony Woods
+# Period 7
+# If Else HW
+# Time Spent: 1 minute
+
+#asks for users favorite number
+fav_num = int(input("What is your favortite Number? ",))
+
+#prints text based on users favorite number
+if fav_num == 7: 
+    print('Thats my favorite number too!')
+else:
+    print(f'My favorite number is 7, but {fav_num} is cool too!')
