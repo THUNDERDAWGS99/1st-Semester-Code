@@ -1,0 +1,42 @@
+# Anthony Woods
+# Period 7
+# Functions & Control Keyword Practice
+# Time Spent: 30 minutes
+
+
+
+
+
+def sayhitotheuser():
+    print('Welcome to the simple addition calculator')
+    
+def get_users_numbers():
+    return input('input your number here: ')
+    
+def add_number(total, num):
+    return total + int(num)
+    
+    
+def mainfunction():
+    sayhitotheuser()
+    total = 0
+    
+    for i in range(2):
+        users_inputs = get_users_numbers()
+        
+        if not users_inputs.isdigit():
+            print("bru it says enter a number for a reason")
+            continue
+        
+        total = add_number(total, users_inputs)
+        print(f'Total = {total}')
+        
+    else:
+        print(' ')
+        
+    print(f"total sum = {total}")
+    
+if __name__ == "__main__":
+    mainfunction()
+        
+    
