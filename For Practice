@@ -1,0 +1,32 @@
+# Anthony Woods
+# Period 7
+# For Loop Recipt (Simplified Recipt Maker)
+# Time Spent: 10 minutes
+
+def create_receipt():
+    #asks for the users 7 items
+    print('Enter details of your 10 items.\n')
+    items = []
+    total = 0
+    
+    #then asks for input for 7 items and its price
+    for i in range(10): 
+        name = input(f'Enter name of item {i}: ')
+        cost = float(input(f'Enter cost of {name}: $'))
+        items.append((name, cost))
+        total += cost
+        
+    #this is the format for the recipt
+    print(" ")
+    print("             YOUR RECEIPT")
+    print("="*40)
+    for name, cost in items:
+        print(f'{name:<30} ${cost:.2f}')
+    print("="*40)
+    print(f'{"TOTAL AMOUNT":<30} ${total:.2f}')
+    
+    
+
+if __name__ == "__main__":
+    create_receipt()
+    
