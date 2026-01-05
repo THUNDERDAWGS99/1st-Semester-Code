@@ -1,0 +1,15 @@
+# Anthony Woods
+# Period 7
+# If Else HW
+# Time Spent: 1 minute
+
+
+#asks for users favorite animal
+animal = input("What is your favorite animal? ")
+
+#prints text based on users favorite animal
+if animal == "dog":
+    print('Thats my favorite animal too!')
+    
+else:
+    print(f'{animal}s are cool too but dogs are my favorite animals.')
