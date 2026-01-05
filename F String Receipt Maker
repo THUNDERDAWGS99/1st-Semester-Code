@@ -1,0 +1,90 @@
+# Anthony Woods
+# Period 7
+# RECIPT MAKER HW
+# Time Spent: 14 minutes
+
+def create_receipt():
+    #asks for the users 7 items
+    print('Enter details of your 10 items.\n')
+    items = []
+    total = 0
+    
+    
+    #then asks for input for 10 items and its price
+    name0 = input(f'Enter name of item 1: ')
+    cost0 = float(input(f'Enter cost of {name0}: $'))
+    items.append((name0, cost0))
+    total += cost0
+    
+    name1 = input(f'Enter name of item 2: ')
+    cost1 = float(input(f'Enter cost of {name1}: $'))
+    items.append((name1, cost1))
+    total += cost1
+    
+    name2 = input(f'Enter name of item 3: ')
+    cost2 = float(input(f'Enter cost of {name2}: $'))
+    items.append((name2, cost2))
+    total += cost2
+    
+    name3 = input(f'Enter name of item 4: ')
+    cost3 = float(input(f'Enter cost of {name3}: $'))
+    items.append((name3, cost3))
+    total += cost3
+        
+    name4 = input(f'Enter name of item 5: ')
+    cost4 = float(input(f'Enter cost of {name4}: $'))
+    items.append((name4, cost4))
+    total += cost4
+    
+    name5 = input(f'Enter name of item 6: ')
+    cost5 = float(input(f'Enter cost of {name5}: $'))
+    items.append((name5, cost5))
+    total += cost5
+    
+    name6 = input(f'Enter name of item 7: ')
+    cost6 = float(input(f'Enter cost of {name6}: $'))
+    items.append((name6, cost6))
+    total += cost6
+    
+    name7 = input(f'Enter name of item 8: ')
+    cost7 = float(input(f'Enter cost of {name7}: $'))
+    items.append((name7, cost7))
+    total += cost7
+    
+    name8 = input(f'Enter name of item 9: ')
+    cost8 = float(input(f'Enter cost of {name8}: $'))
+    items.append((name8, cost8))
+    total += cost8
+    
+    name9 = input(f'Enter name of item 10: ')
+    cost9 = float(input(f'Enter cost of {name9}: $'))
+    items.append((name9, cost9))
+    total += cost9
+        
+        
+        
+    #this is the format for the recipt
+    print(" ")
+    print("             YOUR RECEIPT")
+    print("="*40)
+    
+    #adds eveything together
+    print(f'{name0:<30} ${cost0:.2f}')
+    print(f'{name1:<30} ${cost1:.2f}')
+    print(f'{name2:<30} ${cost2:.2f}')
+    print(f'{name3:<30} ${cost3:.2f}')
+    print(f'{name4:<30} ${cost4:.2f}')
+    print(f'{name5:<30} ${cost5:.2f}')
+    print(f'{name6:<30} ${cost6:.2f}')
+    print(f'{name7:<30} ${cost7:.2f}')
+    print(f'{name8:<30} ${cost8:.2f}')
+    print(f'{name9:<30} ${cost9:.2f}')
+    
+    #prints total price
+    print("="*40)
+    print(f'{"TOTAL AMOUNT":<30} ${total:.2f}')
+    
+    
+#ends the funciton
+if __name__ == "__main__":
+    create_receipt()
