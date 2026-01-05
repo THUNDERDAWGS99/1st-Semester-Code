@@ -1,0 +1,23 @@
+# Anthony Woods
+# Period 7
+# If Elif Else HW
+# Time Spent: 3 minutes
+
+
+#asks for users number
+x = input("Guess the secret number! ")
+
+secret_number = 67
+
+#calculates if users inputted number is too high or too low compared to the secret number above
+if x.isdigit():
+    x = int(x)
+    if x < secret_number:
+        print('Too low!')
+    elif x > secret_number:
+        print('T6oo high!')
+    else:
+        print(" ")
+        print('Correct!')
+else:
+    print('Thats not a number >:( ')
