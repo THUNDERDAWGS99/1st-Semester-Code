@@ -1,0 +1,49 @@
+# Anthony Woods
+# Period 7
+# Logical_Operators_Practice
+# Time Spent: 16 minutes
+
+
+def Logical_Operators_Practice():
+    
+    #Using not
+    homeless = input("do you have a home? (yes or no): ") == "no"
+    if not homeless:
+        print("nice, you have a house! \n")
+        
+        
+        
+    #Using or
+    dog_liker = input('do you like dogs? (yes/no): ')
+    print(" ")
+    cat_liker = input('do you like cats? (yes/no): ')
+    print(" ")
+    
+    dog = dog_liker == "yes"
+    cat = cat_liker == "yes"
+    
+    #determines if the user likes pets or not
+    if dog or cat:
+        print("You like pets!")
+    else:
+        print("Looks like you dont like pets.")
+    print(' ')
+    
+    #Using and
+    OwnsHouse = input('do you own a house? (yes/no) ') 
+    print(' ')
+    OwnsAnimal = input('do you own an animal? (yes/no) ') 
+    print(' ')
+    
+    Owner = OwnsHouse == "yes"
+    AnimalOwner = OwnsAnimal == "yes"
+    
+    #determines if the user owns a animal and house at the same time
+    if Owner and AnimalOwner:
+        print('you own an animal and house!')
+    else:
+        print('you dont own both at the same time :( ')
+    
+    
+#ends function
+Logical_Operators_Practice()
