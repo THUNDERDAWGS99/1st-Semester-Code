@@ -1,0 +1,32 @@
+# Anthony Woods
+# Period 7
+# Value return function HW
+# Time Spent: 10 minutes
+
+
+
+
+
+#operations definition
+def operations(a, b):
+    add = a + b 
+    subtract = a - b
+    multiply = a * b
+    divide = a / b
+    
+    return add, subtract, multiply, divide
+
+#gets users numbers
+x = float(input('first number?: '))
+y = float(input("second number?: "))
+ 
+#call the operations function
+add, subtract, multiply, divide = operations(x, y)
+
+
+#gives the sum of the numbers
+print(' ')
+print("Add:", add)
+print("Subtract:", subtract)
+print('multiply:', multiply)
+print("divide:", divide)
