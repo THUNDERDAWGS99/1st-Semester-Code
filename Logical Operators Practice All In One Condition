@@ -1,0 +1,25 @@
+# Anthony Woods
+# Period 7
+# Logical_Operators_Practice_AllInOneCondition
+# Time Spent: 16 minutes
+
+
+def Logical_Operators_Practice():
+    
+    #gets all the user inputs
+    homeless = input('do you have a house? (yes/no) ') == "no"
+    dogliker = input("do you like dogs? (yes/no) ") == "yes"
+    catliker = input('do you like cats? (yes/no) ') == 'yes'
+    owns_house = input('if you have a house, do you own it? (yes/no) ') == "yes"
+    owns_animal = input("if you like dogs and cats, do you have an animal? (yes/no)") == "yes"
+    
+    #decides either the user likes animals and owns a house or doesnt meet all conditions
+    print(' ')
+    print('therfore...')
+    if not homeless and dogliker or catliker and owns_house and owns_animal:
+        print('nice! you like animals and own a house!')
+    else:
+        print('it looks like you dont meet all the conditions')
+    
+#ends function
+Logical_Operators_Practice()
